@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Our Team</h1>
+
+  <div class="row">
+    <% data.members.each do |member, info| %>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <h2><%= info.name %></h2>
+      <%= image_tag info.picture, class: "avatar-large" %>
+    </div>
+    <% end %>
+  </div>
+</div>
